@@ -1,4 +1,4 @@
-package com.giedrius.baseproject.utils
+package com.giedrius.baseproject.utils.values
 
 class Constants {
     companion object {

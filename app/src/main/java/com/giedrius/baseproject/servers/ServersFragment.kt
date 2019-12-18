@@ -10,7 +10,7 @@ import com.giedrius.baseproject.dagger.BaseDaggerFragment
 import com.giedrius.baseproject.login.LoginFragment
 import com.giedrius.baseproject.servers.list.ServersAdapter
 import com.giedrius.baseproject.servers.network.Server
-import com.giedrius.baseproject.utils.Constants
+import com.giedrius.baseproject.utils.values.Constants
 import com.giedrius.baseproject.utils.extensions.replaceFragment
 import kotlinx.android.synthetic.main.fragment_servers.iconLogout
 import kotlinx.android.synthetic.main.fragment_servers.serversList

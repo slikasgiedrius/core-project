@@ -1,9 +1,8 @@
 package com.giedrius.baseproject.utils.network
 
-import com.giedrius.baseproject.BuildConfig
 import com.giedrius.baseproject.login.network.LoginService
 import com.giedrius.baseproject.servers.network.ServersService
-import com.giedrius.baseproject.utils.Constants
+import com.giedrius.baseproject.utils.values.Constants
 import com.giedrius.baseproject.utils.schedulers.Io
 import dagger.Module
 import dagger.Provides

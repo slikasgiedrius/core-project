@@ -1,7 +1,7 @@
 package com.giedrius.baseproject.repository
 
 import android.content.SharedPreferences
-import com.giedrius.baseproject.utils.Constants
+import com.giedrius.baseproject.utils.values.Constants
 
 class PreferencesTokenStorage(
         private val sharedPreferences: SharedPreferences
