@@ -10,7 +10,6 @@ import com.giedrius.baseproject.servers.network.ServersService
 import com.giedrius.baseproject.utils.mvp.ViewPresenter
 import io.reactivex.Scheduler
 import io.reactivex.rxkotlin.addTo
-import timber.log.Timber
 
 class LoginPresenter(
 
@@ -40,6 +39,5 @@ class LoginPresenter(
     private fun onError(throwable: Throwable) {
         onView { showError(throwable.localizedMessage) }
         onView { hideLoadingView() }
-        Timber.e(throwable)
     }
 }

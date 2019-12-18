@@ -2,7 +2,6 @@ package com.giedrius.baseproject.app
 
 import dagger.android.AndroidInjector
 import dagger.android.DaggerApplication
-import timber.log.Timber
 
 class BaseApplication : DaggerApplication() {
 
@@ -10,6 +9,5 @@ class BaseApplication : DaggerApplication() {
 
     override fun onCreate() {
         super.onCreate()
-        Timber.plant(Timber.DebugTree())
     }
 }

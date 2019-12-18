@@ -7,7 +7,6 @@ import com.giedrius.baseproject.servers.network.ServersService
 import com.giedrius.baseproject.utils.mvp.ViewPresenter
 import io.reactivex.Scheduler
 import io.reactivex.rxkotlin.addTo
-import timber.log.Timber
 
 class ServersPresenter(
         private val mainScheduler: Scheduler,
@@ -35,7 +34,6 @@ class ServersPresenter(
     }
 
     private fun onServersDownloadFailed(throwable: Throwable) {
-        Timber.e(throwable)
         onView { showError(throwable.localizedMessage) }
     }
 }
