@@ -7,6 +7,8 @@ import com.giedrius.baseproject.login.network.LoginService
 import com.giedrius.baseproject.repository.TokenStorage
 import com.giedrius.baseproject.servers.network.Server
 import com.giedrius.baseproject.servers.network.ServersService
+import com.giedrius.baseproject.utils.Constants
+import com.giedrius.baseproject.utils.Constants.Companion
 import com.giedrius.baseproject.utils.mvp.ViewPresenter
 import io.reactivex.Scheduler
 import io.reactivex.rxkotlin.addTo
@@ -26,7 +28,7 @@ class LoginPresenter(
                 tokenStorage.saveToken(response.token)
                 onView { showLoadingView() }
             }
-            .flatMap { response -> serversService.getServers("Bearer ${response.token}") }
+            .flatMap { response -> serversService.getServers("${Constants.BEARER} ${response.token}") }
             .observeOn(mainScheduler)
             .subscribe(::onServersDownloaded, ::onError)
             .addTo(subscription)

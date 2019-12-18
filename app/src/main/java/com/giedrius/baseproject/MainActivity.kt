@@ -1,7 +1,7 @@
 package com.giedrius.baseproject
 
 import android.os.Bundle
-import com.giedrius.baseproject.base.BaseDaggerActivity
+import com.giedrius.baseproject.dagger.BaseDaggerActivity
 import com.giedrius.baseproject.login.LoginFragment
 import com.giedrius.baseproject.repository.TokenStorage
 import com.giedrius.baseproject.servers.ServersFragment

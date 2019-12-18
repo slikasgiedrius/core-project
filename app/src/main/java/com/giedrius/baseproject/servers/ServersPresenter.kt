@@ -4,6 +4,8 @@ import com.giedrius.baseproject.repository.TokenStorage
 import com.giedrius.baseproject.servers.ServersContract.View
 import com.giedrius.baseproject.servers.network.Server
 import com.giedrius.baseproject.servers.network.ServersService
+import com.giedrius.baseproject.utils.Constants
+import com.giedrius.baseproject.utils.Constants.Companion
 import com.giedrius.baseproject.utils.mvp.ViewPresenter
 import io.reactivex.Scheduler
 import io.reactivex.rxkotlin.addTo
@@ -23,7 +25,7 @@ class ServersPresenter(
         onView { setList() }
         servers?.let { nonNullServers ->
             onView { populateServers(nonNullServers) }
-        } ?: serversService.getServers("Bearer ${tokenStorage.getToken()}")
+        } ?: serversService.getServers("${Constants.BEARER} ${tokenStorage.getToken()}")
                 .observeOn(mainScheduler)
                 .subscribe(::onServersReceived, ::onServersDownloadFailed)
                 .addTo(subscription)

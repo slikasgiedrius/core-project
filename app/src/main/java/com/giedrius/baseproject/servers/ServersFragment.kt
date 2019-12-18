@@ -6,10 +6,11 @@ import android.widget.Toast
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.RecyclerView
 import com.giedrius.baseproject.R
-import com.giedrius.baseproject.base.BaseDaggerFragment
+import com.giedrius.baseproject.dagger.BaseDaggerFragment
 import com.giedrius.baseproject.login.LoginFragment
 import com.giedrius.baseproject.servers.list.ServersAdapter
 import com.giedrius.baseproject.servers.network.Server
+import com.giedrius.baseproject.utils.Constants
 import com.giedrius.baseproject.utils.extensions.replaceFragment
 import kotlinx.android.synthetic.main.fragment_servers.iconLogout
 import kotlinx.android.synthetic.main.fragment_servers.serversList
@@ -29,7 +30,7 @@ class ServersFragment : BaseDaggerFragment(), ServersContract.View {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        presenter.onCreated(arguments?.getParcelableArray(KEY_SERVERS) as Array<Server>?)
+        presenter.onCreated(arguments?.getParcelableArray(Constants.KEY_SERVERS) as Array<Server>?)
         iconLogout.setOnClickListener { presenter.onLogoutClicked() }
     }
 
@@ -59,10 +60,9 @@ class ServersFragment : BaseDaggerFragment(), ServersContract.View {
     }
 
     companion object {
-        private const val KEY_SERVERS = "key.servers"
         fun newInstance(servers: List<Server>? = null): ServersFragment {
             return ServersFragment().apply {
-                arguments = Bundle().apply { putParcelableArray(KEY_SERVERS, servers?.toTypedArray()) }
+                arguments = Bundle().apply { putParcelableArray(Constants.KEY_SERVERS, servers?.toTypedArray()) }
             }
         }
     }

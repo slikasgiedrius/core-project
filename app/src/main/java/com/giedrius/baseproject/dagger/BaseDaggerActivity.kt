@@ -1,4 +1,4 @@
-package com.giedrius.baseproject.base
+package com.giedrius.baseproject.dagger
 
 import android.os.Bundle
 import androidx.annotation.LayoutRes

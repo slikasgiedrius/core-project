@@ -5,7 +5,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintSet
 import com.giedrius.baseproject.R
-import com.giedrius.baseproject.base.BaseDaggerFragment
+import com.giedrius.baseproject.dagger.BaseDaggerFragment
 import com.giedrius.baseproject.servers.ServersFragment
 import com.giedrius.baseproject.servers.network.Server
 import com.giedrius.baseproject.utils.extensions.replaceFragment

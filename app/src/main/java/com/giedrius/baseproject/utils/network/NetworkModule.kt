@@ -3,6 +3,7 @@ package com.giedrius.baseproject.utils.network
 import com.giedrius.baseproject.BuildConfig
 import com.giedrius.baseproject.login.network.LoginService
 import com.giedrius.baseproject.servers.network.ServersService
+import com.giedrius.baseproject.utils.Constants
 import com.giedrius.baseproject.utils.schedulers.Io
 import dagger.Module
 import dagger.Provides
@@ -19,16 +20,13 @@ abstract class NetworkModule {
 
     @Module
     companion object {
-        private const val AUTHORIZATION_HEADER = "orization"
-        private const val BEARER = "Bearer"
-
 
         @JvmStatic
         @Singleton
         @Provides
         fun provideRetrofit(client: OkHttpClient, @Io scheduler: Scheduler): Retrofit {
             return Retrofit.Builder()
-                .baseUrl(BuildConfig.BASE_URL)
+                .baseUrl(Constants.BASE_URL)
                 .client(client)
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.createWithScheduler(scheduler))
