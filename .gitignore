@@ -1,80 +1,42 @@
-.gradle/5.4.1/gc.properties
-.gradle/5.4.1/executionHistory/executionHistory.bin
-.gradle/5.4.1/executionHistory/executionHistory.lock
-.gradle/5.4.1/fileChanges/last-build.bin
-.gradle/5.4.1/fileHashes/fileHashes.bin
-.gradle/5.4.1/fileHashes/fileHashes.lock
-.gradle/buildOutputCleanup/buildOutputCleanup.lock
-.gradle/buildOutputCleanup/cache.properties
-.gradle/buildOutputCleanup/outputFiles.bin
-.gradle/vcs-1/gc.properties
-.idea/gradle.xml
-.idea/misc.xml
-.idea/modules.xml
-.idea/runConfigurations.xml
-.idea/vcs.xml
-.idea/workspace.xml
-.idea/caches/build_file_checksums.ser
-.idea/codeStyles/Project.xml
-.idea/libraries/Gradle__androidx_activity_activity_1_0_0_aar.xml
-.idea/libraries/Gradle__androidx_annotation_annotation_1_1_0_jar.xml
-.idea/libraries/Gradle__androidx_appcompat_appcompat_1_1_0_aar.xml
-.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_1_0_aar.xml
-.idea/libraries/Gradle__androidx_arch_core_core_common_2_1_0_jar.xml
-.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml
-.idea/libraries/Gradle__androidx_collection_collection_1_1_0_jar.xml
-.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_1_1_3_aar.xml
-.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_solver_1_1_3_jar.xml
-.idea/libraries/Gradle__androidx_core_core_1_1_0_aar.xml
-.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml
-.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml
-.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml
-.idea/libraries/Gradle__androidx_fragment_fragment_1_1_0_aar.xml
-.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml
-.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_1_0_jar.xml
-.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml
-.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml
-.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_1_0_aar.xml
-.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_1_0_aar.xml
-.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml
-.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_1_0_aar.xml
-.idea/libraries/Gradle__androidx_savedstate_savedstate_1_0_0_aar.xml
-.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_1_0_aar.xml
-.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_1_0_aar.xml
-.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_0_aar.xml
-.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml
-.idea/libraries/Gradle__com_google_code_gson_gson_2_8_2_jar.xml
-.idea/libraries/Gradle__com_google_dagger_dagger_2_16_jar.xml
-.idea/libraries/Gradle__com_google_dagger_dagger_android_2_16_aar.xml
-.idea/libraries/Gradle__com_google_dagger_dagger_android_support_2_16_aar.xml
-.idea/libraries/Gradle__com_jakewharton_timber_timber_4_7_1_aar.xml
-.idea/libraries/Gradle__com_squareup_okhttp3_logging_interceptor_3_11_0_jar.xml
-.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_11_0_jar.xml
-.idea/libraries/Gradle__com_squareup_okio_okio_1_14_0_jar.xml
-.idea/libraries/Gradle__com_squareup_retrofit2_adapter_rxjava2_2_4_0_jar.xml
-.idea/libraries/Gradle__com_squareup_retrofit2_converter_gson_2_4_0_jar.xml
-.idea/libraries/Gradle__com_squareup_retrofit2_retrofit_2_4_0_jar.xml
-.idea/libraries/Gradle__io_reactivex_rxjava2_rxandroid_2_1_0_aar.xml
-.idea/libraries/Gradle__io_reactivex_rxjava2_rxjava_2_2_2_jar.xml
-.idea/libraries/Gradle__io_reactivex_rxjava2_rxkotlin_2_3_0_jar.xml
-.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml
-.idea/libraries/Gradle__junit_junit_4_12_jar.xml
-.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_9_3_jar.xml
-.idea/libraries/Gradle__net_bytebuddy_byte_buddy_agent_1_9_3_jar.xml
-.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml
-.idea/libraries/Gradle__org_jetbrains_annotations_16_0_1_jar.xml
-.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_android_extensions_runtime_1_3_21_jar.xml
-.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_3_21_jar.xml
-.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_21_jar.xml
-.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_3_21_jar.xml
-.idea/libraries/Gradle__org_mockito_mockito_core_2_23_4_jar.xml
-.idea/libraries/Gradle__org_mockito_mockito_inline_2_22_0_jar.xml
-.idea/libraries/Gradle__org_objenesis_objenesis_2_6_jar.xml
-.idea/libraries/Gradle__org_reactivestreams_reactive_streams_1_0_2_jar.xml
-.gradle/5.4.1/fileHashes/resourceHashesCache.bin
-.idea/.name
-build/kotlin/sessions/kotlin-compiler-1602629076548908481.salive
-.gradle/5.4.1/javaCompile/classAnalysis.bin
-.gradle/5.4.1/javaCompile/jarAnalysis.bin
-.gradle/5.4.1/javaCompile/javaCompile.lock
-.gradle/5.4.1/javaCompile/taskHistory.bin
+### Android ###
+# Built application files
+*.apk
+*.ap_
+
+# Files for the Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+
+# Gradle files
+.gradle/
+build/
+/*/build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Proguard folder generated by Eclipse
+proguard/
+
+# Log Files
+*.log
+
+### Android Patch ###
+gen-external-apklibs
+
+## Idea ###
+*.iml
+!.idea/
+.idea/*
+!.idea/fileTemplates/
+.idea/fileTemplates/*
+!.idea/fileTemplates/Fragment.kt
+!.idea/fileTemplates/ViewModel.kt
+projectFilesBackup
+app/.idea
